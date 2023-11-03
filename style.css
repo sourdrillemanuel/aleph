@@ -36,14 +36,12 @@ DESIGN TOKENS
 
 /* Fonts */
 
-.text-4xl, .text-3xl, .text-2xl, .text-xl, .text-lg {
-  font-family: "P22 Mackinac", serif;
-}
-.text-md, .text-sm, .text-xs {
-  font-family: "Inter", sans-serif;
+.text-4xl, .text-3xl, .text-2xl, .text-xl, .text-lg, .text-md {
+  font-family: 'Inter', sans-serif;
 }
 .text-4xl {
   line-height: 100%;
+  letter-spacing: -1rem;
 }
 .text-3xl, .text-2xl, .text-xl {
   line-height: 125%;
@@ -64,13 +62,19 @@ DESIGN TOKENS
   text-align: right;
 }
 
-/* Font variant */
+/* Font style */
 
 .italic {
   font-style: italic;
 }
-.bold {
-  font-weight: 700;
+
+/* Font weight */
+
+.regular {
+  font-weight: 400;
+}
+.medium {
+  font-weight: 500;
 }
 
 /* Colors */
@@ -113,7 +117,7 @@ LARGE DEVICES
   /* Typescale */
 
   .text-4xl {
-    font-size: 6rem; /* 96px */
+    font-size: 12rem; /* 192px */
   }
   .text-3xl {
     font-size: 3rem; /* 48px */
@@ -167,6 +171,9 @@ LARGE DEVICES
   }
   .l-gap-y-32 {
     row-gap: 2rem; /* 32px */
+  }
+  .l-gap-y-16 {
+    row-gap: 1rem; /* 16px */
   }
 
   /* Columns */
@@ -325,6 +332,10 @@ LARGE DEVICES
   .l-mr-32 {
     margin-right: 2rem;
   }
+
+  .l-mb-16 {
+    margin-bottom: 1rem;
+  } /* 16px */
 
   .l-mx-32 {
     margin-left: 2rem;
@@ -615,6 +626,7 @@ img {
   flex-direction: row;
 }
 .flex-col {
+  display: flex;
   flex-direction: column;
 }
 .flex-wrap {
